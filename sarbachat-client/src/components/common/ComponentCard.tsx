@@ -7,12 +7,7 @@ interface ComponentCardProps {
   children: React.ReactNode;
   className?: string; // Additional custom classes for styling
   desc?: string; // Description text
-  button?:{
-    visible?: boolean,
-    title?:string
-    variant?: 'primary' | 'outline';
-  }
-  handleSubmit?: () => void;
+  headerComponent?: React.ReactNode;
 }
 
 const ComponentCard: React.FC<ComponentCardProps> = ({
@@ -20,8 +15,7 @@ const ComponentCard: React.FC<ComponentCardProps> = ({
   children,
   className = "",
   desc = "",
-  button,
-  handleSubmit
+  headerComponent
 }) => {
   return (
     <div
@@ -39,16 +33,8 @@ const ComponentCard: React.FC<ComponentCardProps> = ({
             </p>
           )}
         </div>
-
-       {button?.visible && <div className="mt-3">
-          <Button size="sm" variant={button?.variant}
-          onClick={handleSubmit}
-          >
-           {button?.title ?? 'Submit'}
-          </Button>
-        </div>}
+        <div>{headerComponent}</div>
       </div>
-
       {/* Card Body */}
       <div className="p-4 border-t border-gray-100 dark:border-gray-800 sm:p-6">
         <div className="space-y-6">{children}</div>

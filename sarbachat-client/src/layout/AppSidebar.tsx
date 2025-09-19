@@ -51,7 +51,7 @@ const navItems: NavItem[] = [
   {
     name: "Social Media Manger",
     icon: <TableIcon />,
-    subItems: [{ name: "Users", path: "/basic-tables", pro: false }],
+    subItems: [{ name: "Users", path: "/social/users", pro: false }],
   },
   {
     name: "Pages",

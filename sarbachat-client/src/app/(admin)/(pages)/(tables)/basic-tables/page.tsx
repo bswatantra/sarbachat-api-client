@@ -16,12 +16,7 @@ export default function BasicTables() {
     <div>
       <PageBreadcrumb pageTitle="Social Users" />
       <div className="space-y-6">
-        <ComponentCard title="Users" button={{
-          visible: true,
-          title: "Link Facebook",
-          variant: "primary",
-        }}
-        handleSubmit={handleSocialLink}
+        <ComponentCard title="Users"
         >
           <BasicTableOne />
         </ComponentCard>
