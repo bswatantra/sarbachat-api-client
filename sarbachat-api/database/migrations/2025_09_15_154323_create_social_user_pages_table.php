@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use App\Status;
+use App\Enums\Status;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;

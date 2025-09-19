@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use App\Status;
-use App\SocialType;
+use App\Enums\Status;
+use App\Enums\SocialType;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
