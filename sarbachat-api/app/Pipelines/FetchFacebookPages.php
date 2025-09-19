@@ -14,7 +14,7 @@ final class FetchFacebookPages
 
     public function __construct()
     {
-        $this->url = config('urls.facebook,base_path');
+        $this->url = config('urls.facebook.base_path');
     }
 
     public function __invoke(object $user, Closure $next)

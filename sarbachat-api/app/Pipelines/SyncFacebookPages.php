@@ -27,7 +27,8 @@ final readonly class SyncFacebookPages
                 'medium' => $payload->user_medium,
             ]
         ));
+        $payload->pages = $userPages;
 
-        return $next($userPages);
+        return $next($payload);
     }
 }

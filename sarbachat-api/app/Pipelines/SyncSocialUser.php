@@ -14,7 +14,7 @@ final readonly class SyncSocialUser
         private SocialUser $socialUser
     ) {}
 
-    public function __invoke(object $data, Closure $next): object
+    public function __invoke(object $data, Closure $next): ?object
     {
         $user = $this->socialUser->updateOrCreate(
             ['social_id' => $data->user->id],
