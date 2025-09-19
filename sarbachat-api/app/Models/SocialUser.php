@@ -12,6 +12,7 @@ final class SocialUser extends Model
 {
     use HasFactory;
     use SoftDeletes;
+
     protected $guarded = ['id'];
 
     /**
