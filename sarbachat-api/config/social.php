@@ -32,4 +32,8 @@ return [
             // 'instagram_manage_comments'
         ],
     ],
+
+    'facebook' => [
+        'webhook_verify_token' => env('FACEBOOK_WEBHOOK_VERIFICATION_TOKEN'),
+    ],
 ];
